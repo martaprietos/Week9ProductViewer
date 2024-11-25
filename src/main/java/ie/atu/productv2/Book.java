@@ -2,7 +2,7 @@ package ie.atu.productv2;
 
 import java.text.NumberFormat;
 
-public class Book {
+public class Book{
 
     private String author;
     private String code;

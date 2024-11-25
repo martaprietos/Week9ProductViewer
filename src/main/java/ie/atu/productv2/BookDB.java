@@ -9,7 +9,7 @@ public class BookDB {
         // to return the correct product data
 
 
-        Book myBook = null; //oo
+        Book myBook = null;
         if (productCode.equalsIgnoreCase("java")) {
             myBook = new Book();
             myBook.setCode(productCode);
