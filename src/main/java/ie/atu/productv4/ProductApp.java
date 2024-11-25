@@ -20,7 +20,7 @@ public class ProductApp {
             // The customer could either enter a book code 'java' or software code 'studios' meaning that
             // either a book object or a software object could be returned from the ProductDb class.
             // We need to update the code so that we can handle either type of object returned.
-            ProductDB.getProduct(productCode);
+            p = ProductDB.getProduct(productCode);
             // display the output
 
             System.out.println();
