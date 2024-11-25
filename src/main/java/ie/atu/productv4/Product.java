@@ -1,32 +1,17 @@
-package ie.atu.productv2;
+package ie.atu.productv4;
 
 import java.text.NumberFormat;
 
-public class Software{
-
-    private String version;
+public class Product {
+    //contains all the common attributes of Book and Software
     private String code;
     private String description;
     private double price;
     protected static int count = 0;
-    
-    public Software() {
-        super();
-        version = "";
-        description = "";
-        code = "";
-        price = 0.0;
-        count++;
+
+    public Product() {
     }
 
-    public void setVersion(String version) {
-        this.version = version;
-    }
-
-    public String getVersion() {
-        return version;
-    }
-    
     public void setCode(String code) {
         this.code = code;
     }
@@ -56,12 +41,12 @@ public class Software{
         return currency.format(price);
     }
 
+    @Override
     public String toString() {
-        return description + " by " + version;
+        return description;
     }
 
     public static int getCount() {
         return count;
     }
-
 }

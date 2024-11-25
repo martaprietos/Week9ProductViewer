@@ -1,6 +1,4 @@
-package ie.atu.productv3;
-
-import ie.atu.productv2.Book;
+package ie.atu.productv4;
 
 import java.util.Scanner;
 
@@ -22,7 +20,7 @@ public class ProductApp {
             // The customer could either enter a book code 'java' or software code 'studios' meaning that
             // either a book object or a software object could be returned from the ProductDb class.
             // We need to update the code so that we can handle either type of object returned.
-            p = ProductDB.getProduct(productCode);
+            ProductDB.getProduct(productCode);
             // display the output
 
             System.out.println();
